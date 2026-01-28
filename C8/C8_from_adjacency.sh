@@ -1,0 +1,1 @@
+run_inference.py contigmap.contigs=[\"368-368\"] inference.symmetry='C8' inference.output_prefix='C8_output/C8' diffuser.T=50 inference.num_designs=25 denoiser.noise_scale_ca=0.5 denoiser.noise_scale_frame=0.5 scaffoldguided.scaffoldguided=True scaffoldguided.scaffold_dir=./C8_from_adjacency_input
