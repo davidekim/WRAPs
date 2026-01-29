@@ -1,0 +1,1 @@
+run_inference.py inference.output_prefix=h16/h16 inference.input_pdb=C8/C8.pdb diffuser.T=15 contigmap.contigs=['A1-46\,15-15\,B52-92\,10-10\,C93-138\,10-10\,D139-184\,10-10\,E185-230\,10-10\,F231-276\,10-10\,G278-322\,10-10\,H323-368\,10-10'] inference.num_designs=1 denoiser.noise_scale_ca=0.5 denoiser.noise_scale_frame=0.5
