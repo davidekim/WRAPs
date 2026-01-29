@@ -1,1 +1,1 @@
-run_inference.py inference.output_prefix=TP0733_h16/TP0733_h16 inference.input_pdb=TP0733_h16.pdb contigmap.contigs=['348-348\,0 B46-212'] inference.num_designs=20 denoiser.noise_scale_ca=0.5 denoiser.noise_scale_frame=0.5 diffuser.partial_T=20
+run_inference.py inference.output_prefix=TP0733_h16_partial_diffusion/TP0733_h16 inference.input_pdb=TP0733_h16.pdb contigmap.contigs=['348-348\,0 B46-212'] inference.num_designs=20 denoiser.noise_scale_ca=0.5 denoiser.noise_scale_frame=0.5 diffuser.partial_T=20

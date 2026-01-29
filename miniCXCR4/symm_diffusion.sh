@@ -1,1 +1,1 @@
-../RFdiffusion/scripts/run_inference.py --config-name symmetry contigmap.contigs=[\'56\'] inference.symmetry='pc7' diffuser.T=50 scaffoldguided.scaffoldguided=True scaffoldguided.scaffold_dir=run_1/ inference.output_prefix=miniCXCR4_run_1_wraps/pc7_1 inference.num_designs=50 inference.radius=3.5
+run_inference.py --config-name symmetry contigmap.contigs=[\'56\'] inference.symmetry='pc7' diffuser.T=50 scaffoldguided.scaffoldguided=True scaffoldguided.scaffold_dir=run_1/ inference.output_prefix=miniCXCR4_run_1_wraps/pc7_1 inference.num_designs=50 inference.radius=3.5

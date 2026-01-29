@@ -1,0 +1,1 @@
+run_inference.py --config-name symmetry contigmap.contigs=[\'44\'] inference.symmetry='pc6' diffuser.T=50 scaffoldguided.scaffoldguided=True scaffoldguided.scaffold_dir=run_1/ inference.output_prefix=pc6_1_0_wrap/pc6_1_0_wrap inference.num_designs=20 inference.radius=3
