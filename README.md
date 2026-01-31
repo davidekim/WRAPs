@@ -26,6 +26,8 @@ Protein MPNN https://github.com/dauparas/ProteinMPNN
 
 Alphafold2 https://github.com/google-deepmind/alphafold
 
+dl_binder_design https://github.com/nrbennet/dl_binder_design
+
 ppi_iterative_opt https://github.com/davidekim/ppi_iterative_opt
 
 
