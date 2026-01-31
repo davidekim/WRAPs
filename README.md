@@ -11,7 +11,7 @@ WRAPs (Water-soluble RFdiffused Amphipathic Proteins) are genetically encoded de
 Ljubica Mihaljević et. al. Membrane protein solubilization and structure determination using de novo-designed amphipathic proteins. Submitted to Science.
 
 ## Installation
-You can install, set up, and run all the necessary software to generate WRAPs from the Google Colab Notebooks provided in this repo for [helical WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
+You can install, set up, and run all the necessary software to generate WRAPs from the Google Colab Notebooks provided in this repo for [helical WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
 
 Alternatively, you can clone this repo into a preferred destination directory by going to that directory and then running:
 
@@ -42,7 +42,7 @@ git submodule update --remote
 ~~~
 
 ## Generating WRAPs
-We recommend using the Google Colab Notebooks provided in this repo for [helical WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
+We recommend using the Google Colab Notebooks provided in this repo for [helical WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
 
 For reproducing designs presented in the [WRAPs paper](https://www.biorxiv.org/content/10.1101/2025.02.04.636539v1), this repo provides directories containing inputs and commands to run RFdiffusion inference to generate backbone WRAPs and WRAPed designs for each target. For all targets, with the exception of MspA which uses tied positions to enforce symmetry at the MPNN sequence design stage, the [previously described](https://www.nature.com/articles/s41467-023-38328-5) protein binder design pipeline, [dl_binder_design](https://github.com/nrbennet/dl_binder_design), was used on each RFDiffused backbone for sequence design and Alphafold2 structure prediction validation. The script to run tied MPNN on WRAPed MspA RFDiffused backbones is provided in this repo.
 
