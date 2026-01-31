@@ -35,6 +35,8 @@ ppi_iterative_opt https://github.com/davidekim/ppi_iterative_opt
 
 sushimaki https://github.com/davidekim/sushimaki
 
+parametric barrels https://github.com/davidekim/parametric_barrels
+
 BBQ https://biocomp.chem.uw.edu.pl/tools/bbq
 
 DeepTMHMM https://dtu.biolib.com/DeepTMHMM
