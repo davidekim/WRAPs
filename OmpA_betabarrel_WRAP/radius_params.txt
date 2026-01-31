@@ -1,3 +1,4 @@
+# git clone https://github.com/davidekim/parametric_barrels.git
 python parametric_barrels/barrels.py --n 10 --S 18 --nres 10 --terminilen 2 --looplen 3 # radius 13.520569295885977 height 20.3107957887298
 python parametric_barrels/barrels.py --n 10 --S 18 --nres 11 --terminilen 2 --looplen 3 # radius 13.520569295885977 height 22.567550876366443
 python parametric_barrels/barrels.py --n 10 --S 18 --nres 12 --terminilen 2 --looplen 3 # radius 13.520569295885977 height 24.824305964003088
