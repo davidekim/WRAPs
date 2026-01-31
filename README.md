@@ -35,10 +35,6 @@ sushimaki https://github.com/davidekim/sushimaki
 
 parametric barrels https://github.com/davidekim/parametric_barrels
 
-BBQ https://biocomp.chem.uw.edu.pl/tools/bbq
-
-DeepTMHMM https://dtu.biolib.com/DeepTMHMM
-
 
 ## Authors and acknowledgment
 This work was conceptualized and developed by David Kim (dekim@uw.edu), Ljubica Mihaljevic (ljubim@uw.edu), and Pooja Bandawane (banda14@uw.edu)
