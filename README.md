@@ -11,9 +11,37 @@ WRAPs (Water-soluble RFdiffused Amphipathic Proteins) are genetically encoded de
 Ljubica Mihaljević et. al. Solubilization of Membrane Proteins using designed protein WRAPS. Submitted to Science.
 
 ## Installation
-You can install, setup, and run all the necessary software to generate WRAPs from Google Colab Notebooks for [helical WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and for [barrel WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
+You can install, setup, and run all the necessary software to generate WRAPs from the Google Colab Notebooks provided in this repo for [helical WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
 
 You can clone this repo into a preferred destination directory by going to that directory and then running:
+
+`git clone https://github.com/davidekim/WRAPs.git`
+
+
+### Dependencies
+
+PyRosetta https://www.pyrosetta.org
+
+RFDiffusion https://github.com/RosettaCommons/RFdiffusion
+
+Protein MPNN https://github.com/dauparas/ProteinMPNN
+
+Alphafold2 https://github.com/google-deepmind/alphafold
+
+ppi_iterative_opt https://github.com/davidekim/ppi_iterative_opt
+
+
+#### To generate parametric barrel WRAPs
+
+sushimaki https://github.com/davidekim/sushimaki
+
+BBQ https://biocomp.chem.uw.edu.pl/tools/bbq
+
+DeepTMHMM https://dtu.biolib.com/DeepTMHMM
+
+
+## Authors and acknowledgment
+This work was conceptualized and developed by David Kim (dekim@uw.edu), Ljubica Mihaljevic (ljubim@uw.edu), and Pooja Bandawane (banda14@uw.edu)
 
 
 
