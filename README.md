@@ -106,7 +106,23 @@ export PATH="$PATH:$(pwd)/RFdiffusion/scripts"
 ## Generating WRAPs <a name="gwraps"></a>
 We recommend using the Google Colab Notebooks provided in this repo for [helical WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb). For a general method that makes WRAPs parametrically around a target protein you can use the [sushimaki](https://colab.research.google.com/github/davidekim/sushimaki/blob/main/sushimaki.ipynb) Google Colab Notebook. 
 
-For reproducing designs presented in the [WRAPs paper](https://www.biorxiv.org/content/10.1101/2025.02.04.636539v1), this repo provides directories containing inputs and commands to run RFdiffusion inference to generate backbone WRAPs and WRAPed designs for each target. For all targets, with the exception of MspA which uses tied positions to enforce symmetry at the MPNN sequence design stage, the [previously described](https://www.nature.com/articles/s41467-023-38328-5) protein binder design pipeline, [dl_binder_design](https://github.com/nrbennet/dl_binder_design), was used on each RFDiffused backbone for sequence design and Alphafold2 structure prediction validation. The script to run tied MPNN on WRAPed MspA RFDiffused backbones is provided in this repo.
+For reproducing designs presented in the [WRAPs paper](https://www.biorxiv.org/content/10.1101/2025.02.04.636539v1), this repo provides directories containing inputs and commands to run RFdiffusion inference to generate backbone WRAPs and WRAPed designs for each target. For all targets, with the exception of MspA which uses tied positions to enforce symmetry at the MPNN sequence design stage, the [previously described](https://www.nature.com/articles/s41467-023-38328-5) protein binder design pipeline, [dl_binder_design](https://github.com/nrbennet/dl_binder_design), was used on each RFDiffused backbone for sequence design and Alphafold2 validation. The script to run tied MPNN on WRAPed MspA RFDiffused backbones is provided in this repo.
+
+### sushimaki
+For helical input WRAPs
+~~~
+python ./sushimaki/sushimaki.py <target pdb to wrap>
+~~~
+
+For beta barrel input WRAPs
+~~~
+python ./sushimaki/sushimaki.py --barrel <target pdb to wrap>
+~~~
+
+For RF partial diffusion backbone refinement, ProteinMPNN sequence design, and Alphafold2 validation
+~~~
+python ./ppi_iterative_opt/ppi_iterative_opt.py *_WRAP_*pdb
+~~~
 
 
 ## Authors and acknowledgment <a name="auths"></a>
