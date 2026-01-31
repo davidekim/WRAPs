@@ -8,7 +8,7 @@ Water-soluble RFdiffused Amphipathic Proteins (WRAPs)
 WRAPs (Water-soluble RFdiffused Amphipathic Proteins) are genetically encoded de novo proteins that surround the lipid-interacting hydrophobic surfaces of transmembrane proteins, rendering them thermostable and water-soluble without the need for detergents. This repo includes scripts and inputs to generate WRAPs as described in the [WRAPs paper](https://www.biorxiv.org/content/10.1101/2025.02.04.636539v1).
 
 ## Reference
-Ljubica Mihaljević et. al. Solubilization of Membrane Proteins using designed protein WRAPS. Submitted to Science.
+Ljubica Mihaljević et. al. Membrane protein solubilization and structure determination using de novo-designed amphipathic proteins. Submitted to Science.
 
 ## Installation
 You can install, setup, and run all the necessary software to generate WRAPs from the Google Colab Notebooks provided in this repo for [helical WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
