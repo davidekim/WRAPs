@@ -13,29 +13,33 @@ Ljubica Mihaljević et. al. Membrane protein solubilization and structure determ
 ## Installation
 You can install, set up, and run all the necessary software to generate WRAPs from the Google Colab Notebooks provided in this repo for [helical WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
 
-Clone this repo into a preferred destination directory by going to that directory and then running:
+Alternatively, you can clone this repo into a preferred destination directory by going to that directory and then running:
 
 `git clone https://github.com/davidekim/WRAPs.git`
 
-
-### Dependencies
+### Submodules
 
 RFDiffusion https://github.com/RosettaCommons/RFdiffusion
 
 Protein MPNN https://github.com/dauparas/ProteinMPNN
 
-Alphafold2 https://github.com/google-deepmind/alphafold
-
 dl_binder_design https://github.com/nrbennet/dl_binder_design
 
 ppi_iterative_opt https://github.com/davidekim/ppi_iterative_opt
-
 
 #### To generate parametric barrel WRAPs
 
 sushimaki https://github.com/davidekim/sushimaki
 
 parametric barrels https://github.com/davidekim/parametric_barrels
+
+Install submodules by running:
+
+~~~
+cd WRAPs
+git submodule init
+git submodule update --remote
+~~~
 
 ## Generating WRAPs
 We recommend using the Google Colab Notebooks provided in this repo for [helical WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb) and  [barrel WRAPS](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb).
