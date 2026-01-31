@@ -20,8 +20,6 @@ You can clone this repo into a preferred destination directory by going to that 
 
 ### Dependencies
 
-PyRosetta https://www.pyrosetta.org
-
 RFDiffusion https://github.com/RosettaCommons/RFdiffusion
 
 Protein MPNN https://github.com/dauparas/ProteinMPNN
