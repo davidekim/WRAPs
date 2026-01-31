@@ -98,7 +98,8 @@ pip install --upgrade "jax[cuda12_pip]<0.6.0" -f https://storage.googleapis.com/
 cd RFdiffusion/env/SE3Transformer; pip install .; cd ../../; pip install -e .; cd ../
 pip install --upgrade pybiolib
 pip install pyrosetta --find-links https://west.rosettacommons.org/pyrosetta/quarterly/release
-os.environ["DGLBACKEND"] = "pytorch"
+export DGLBACKEND="pytorch"
+export PATH="$PATH:$(pwd)/RFdiffusion/scripts"
 ~~~
 
 
