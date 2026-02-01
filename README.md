@@ -126,7 +126,7 @@ python ./ppi_iterative_opt/ppi_iterative_opt.py *_WRAP_*pdb
 
 
 ## Authors and acknowledgment <a name="auths"></a>
-This work was conceptualized and developed by David Kim (dekim@uw.edu), Ljubica Mihaljevic (ljubim@uw.edu), and Pooja Bandawane (banda14@uw.edu)
+This work was conceptualized and developed by David Kim (dekim@uw.edu), Ljubica Mihaljevic (ljubim@uw.edu), Pooja Bandawane (banda14@uw.edu) and Helen Eisenach (heisen@uw.edu)
 
 
 
