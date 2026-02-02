@@ -121,7 +121,7 @@ For beta barrel input WRAPs
 python ./submodules/sushimaki/sushimaki.py --barrel <target pdb to wrap>
 ~~~
 
-For RF partial diffusion backbone refinement, ProteinMPNN sequence design, and Alphafold2 validation
+For RF partial diffusion backbone refinement of sushimaki WRAPs, ProteinMPNN sequence design, and Alphafold2 validation
 ~~~
 python ./submodules/ppi_iterative_opt/ppi_iterative_opt.py *_WRAP_*pdb
 ~~~
