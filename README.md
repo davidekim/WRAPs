@@ -28,10 +28,6 @@ Alternatively, you can clone this repo into a preferred destination directory by
 
 ### Submodules <a name="subs"></a>
 
-RFDiffusion https://github.com/RosettaCommons/RFdiffusion
-
-Protein MPNN https://github.com/dauparas/ProteinMPNN
-
 dl_binder_design https://github.com/nrbennet/dl_binder_design
 
 ppi_iterative_opt https://github.com/davidekim/ppi_iterative_opt
@@ -51,40 +47,28 @@ git submodule init
 git submodule update --remote
 ~~~
 
-Download RFDiffusion model weights.
-~~~
-cd RFdiffusion
-mkdir models && cd models
-wget http://files.ipd.uw.edu/pub/RFdiffusion/6f5902ac237024bdd0c176cb93063dc4/Base_ckpt.pt
-wget http://files.ipd.uw.edu/pub/RFdiffusion/e29311f6f1bf1af907f9ef9f44b8328b/Complex_base_ckpt.pt
-wget http://files.ipd.uw.edu/pub/RFdiffusion/60f09a193fb5e5ccdc4980417708dbab/Complex_Fold_base_ckpt.pt
-wget http://files.ipd.uw.edu/pub/RFdiffusion/74f51cfb8b440f50d70878e05361d8f0/InpaintSeq_ckpt.pt
-wget http://files.ipd.uw.edu/pub/RFdiffusion/76d00716416567174cdb7ca96e208296/InpaintSeq_Fold_ckpt.pt
-wget http://files.ipd.uw.edu/pub/RFdiffusion/5532d2e1f3a4738decd58b19d633b3c3/ActiveSite_ckpt.pt
-wget http://files.ipd.uw.edu/pub/RFdiffusion/12fc204edeae5b57713c5ad7dcb97d39/Base_epoch8_ckpt.pt
-cd ../../
-~~~
-
 Download AlphaFold2 model weights. 
 ~~~
-cd dl_binder_design/af2_initial_guess
+cd submodules/dl_binder_design/af2_initial_guess
 mkdir -p model_weights/params && cd model_weights/params
 wget https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar
 tar --extract --verbose --file=alphafold_params_2022-12-06.tar 
 cd ../../../../ppi_iterative_opt/af2_initial_guess
 ln -s ../../dl_binder_design/af2_initial_guess/model_weights/params .
-cd ../../
-~~~
-
-Install ppi_iterative_opt RFdiffusion checkpoint.
-~~~
-cd ppi_iterative_opt/rf_diffusion
-mkdir models && cd models
-wget https://files.ipd.uw.edu/pub/ppi_iterative_opt/rf_diffusion/models/BFF_4.pt
 cd ../../../
 ~~~
 
+Install ppi_iterative_opt RFdiffusion checkpoints.
+~~~
+cd submodules/ppi_iterative_opt/rf_diffusion
+mkdir models && cd models
+wget https://files.ipd.uw.edu/pub/ppi_iterative_opt/rf_diffusion/models/BFF_4.pt
+wget http://files.ipd.uw.edu/pub/RFdiffusion/60f09a193fb5e5ccdc4980417708dbab/Complex_Fold_base_ckpt.pt
+cd ../../../../
+~~~
+
 ### Dependencies/Environment set up <a name="deps"></a>
+It is recommended to create and use a [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) environment with Anaconda or Miniconda first.
 
 ~~~
 pip install jedi omegaconf hydra-core icecream pyrsistent pynvml decorator
@@ -95,11 +79,11 @@ pip install biopython==1.81
 pip install -U dm-haiku
 pip install ml-collections
 pip install --upgrade "jax[cuda12_pip]<0.6.0" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
-cd RFdiffusion/env/SE3Transformer; pip install .; cd ../../; pip install -e .; cd ../
+cd submodules/ppi_iterative_opt/rf_diffusion/env/SE3Transformer; pip install .; cd ../../../../../
 pip install --upgrade pybiolib
 pip install pyrosetta --find-links https://west.rosettacommons.org/pyrosetta/quarterly/release
 export DGLBACKEND="pytorch"
-export PATH="$PATH:$(pwd)/RFdiffusion/scripts"
+export PATH="$PATH:$(pwd)/submodules/ppi_iterative_opt/rf_diffusion"
 ~~~
 
 
@@ -111,17 +95,17 @@ For reproducing designs presented in the [WRAPs paper](https://www.biorxiv.org/c
 ### sushimaki
 For helical input WRAPs
 ~~~
-python ./sushimaki/sushimaki.py <target pdb to wrap>
+python ./submodules/sushimaki/sushimaki.py <target pdb to wrap>
 ~~~
 
 For beta barrel input WRAPs
 ~~~
-python ./sushimaki/sushimaki.py --barrel <target pdb to wrap>
+python ./submodules/sushimaki/sushimaki.py --barrel <target pdb to wrap>
 ~~~
 
 For RF partial diffusion backbone refinement, ProteinMPNN sequence design, and Alphafold2 validation
 ~~~
-python ./ppi_iterative_opt/ppi_iterative_opt.py *_WRAP_*pdb
+python ./submodules/ppi_iterative_opt/ppi_iterative_opt.py *_WRAP_*pdb
 ~~~
 
 
