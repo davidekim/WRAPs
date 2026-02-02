@@ -1,18 +1,12 @@
-[submodule "RFdiffusion"]
-	path = RFdiffusion
-	url = https://github.com/RosettaCommons/RFdiffusion
-[submodule "ProteinMPNN"]
-	path = ProteinMPNN
-	url = https://github.com/dauparas/ProteinMPNN
-[submodule "dl_binder_design"]
-	path = dl_binder_design
+[submodule "submodules/dl_binder_design"]
+	path = submodules/dl_binder_design
 	url = https://github.com/nrbennet/dl_binder_design
-[submodule "ppi_iterative_opt"]
-	path = ppi_iterative_opt
+[submodule "submodules/ppi_iterative_opt"]
+	path = submodules/ppi_iterative_opt
 	url = https://github.com/davidekim/ppi_iterative_opt
-[submodule "sushimaki"]
-	path = sushimaki
-	url = https://github.com/davidekim/sushimaki
-[submodule "parametric_barrels"]
-	path = parametric_barrels
+[submodule "submodules/parametric_barrels"]
+	path = submodules/parametric_barrels
 	url = https://github.com/davidekim/parametric_barrels
+[submodule "submodules/sushimaki"]
+	path = submodules/sushimaki
+	url = https://github.com/davidekim/sushimaki
