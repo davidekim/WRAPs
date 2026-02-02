@@ -51,7 +51,7 @@ for n in range(10,30):  # n = strands
 
           if h < 35 and h > 19:  # cylinder height in range to cover lipid bilayer interacting sidechains
 
-              print(f'python ../parametric_barrels/barrels.py --n {n} --S {shear} --nres {nres} --terminilen 2 --looplen 3 # radius {r} height {h}')
+              print(f'python ../submodules/parametric_barrels/barrels.py --n {n} --S {shear} --nres {nres} --terminilen 2 --looplen 3 # radius {r} height {h}')
  
 
 
