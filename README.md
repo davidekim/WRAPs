@@ -14,7 +14,7 @@ Ljubica Mihaljević et. al. Membrane protein solubilization and structure determ
 
 * [Installation](#install)
   * [Submodules](#subs)
-  * [Dependencies/Environment set up](#deps)
+  * [Dependencies/Environment setup](#deps)
 * [Generating WRAPs](#gwraps)
   * [sushimaki](#sushimaki)  
 * [Authors and acknowledgment](#auths)
@@ -75,7 +75,7 @@ wget http://files.ipd.uw.edu/pub/RFdiffusion/60f09a193fb5e5ccdc4980417708dbab/Co
 cd ../../../../
 ~~~
 
-### Dependencies/Environment set up <a name="deps"></a>
+### Dependencies/Environment setup <a name="deps"></a>
 It is recommended to create and use a [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) environment with Anaconda or Miniconda first.
 Note: Due to different GPU types, drivers, and future incompatibilities, this environment may not run on all setups.
 
