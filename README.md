@@ -16,6 +16,7 @@ Ljubica Mihaljević et. al. Membrane protein solubilization and structure determ
   * [Submodules](#subs)
   * [Dependencies/Environment set up](#deps)
 * [Generating WRAPs](#gwraps)
+  * [sushimaki](#sushimaki)  
 * [Authors and acknowledgment](#auths)
 
 
@@ -109,7 +110,7 @@ cd ../
 
 For all targets, with the exception of MspA which uses tied positions to enforce symmetry at the MPNN sequence design stage, the [previously described](https://www.nature.com/articles/s41467-023-38328-5) protein binder design pipeline, [dl_binder_design](https://github.com/nrbennet/dl_binder_design), was used on each RFDiffused backbone for sequence design and Alphafold2 validation. The script to run tied MPNN on WRAPed MspA RFDiffused backbones is provided in this repo.
 
-### sushimaki
+### sushimaki <a name="sushimaki"></a>
 For helical input WRAPs
 ~~~
 python ./submodules/sushimaki/sushimaki.py <target pdb to wrap>
