@@ -8,9 +8,9 @@ Water-soluble RFdiffused Amphipathic Proteins (WRAPs)
 WRAPs (Water-soluble RFdiffused Amphipathic Proteins) are genetically encoded de novo proteins that surround the lipid-interacting hydrophobic surfaces of transmembrane proteins, rendering them thermostable and water-soluble without the need for detergents. This repo includes scripts and inputs to generate WRAPs as described in the [WRAPs paper](https://www.biorxiv.org/content/10.1101/2025.02.04.636539v1).
 
 ## References
-Ljubica Mihaljević et. al. Solubilization of Membrane Proteins using designed protein WRAPS. Submitted to Science. ([barrel wrap](https://www.biorxiv.org/content/10.1101/2025.02.04.636539v1))
+Ljubica Mihaljević et. al. Solubilization of Membrane Proteins using designed protein WRAPS. Submitted to Science. ([biorxiv](https://www.biorxiv.org/content/10.1101/2025.02.04.636539v1))
 
-Yong Hyun Kwon et. al. Topological reprogramming transforms an integral membrane oligosaccharyltransferase into a water-soluble glycosylation catalyst ([helix wrap](https://www.biorxiv.org/content/10.64898/2026.01.30.702934v1))
+Yong Hyun Kwon et. al. Topological reprogramming transforms an integral membrane oligosaccharyltransferase into a water-soluble glycosylation catalyst ([biorxiv](https://www.biorxiv.org/content/10.64898/2026.01.30.702934v1))
 
 ## Table of Contents
 
