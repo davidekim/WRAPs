@@ -121,7 +121,7 @@ Directories containing inputs and commands used for the paper
 * PB0110_TP0698 - For helical WRAPed TP0698
 * WRAP_GlpG - For helical WRAPed GlpG
 * miniCXCR4 - For helical WRAPed miniCXCR4
-* WRAP_MspA - For hleical WRAPed MspA
+* WRAP_MspA - For helical WRAPed MspA
 
 
 ### barrel <a name="barrel"></a>
