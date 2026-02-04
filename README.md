@@ -77,7 +77,7 @@ Install ppi_iterative_opt RFdiffusion checkpoints.
 cd submodules/ppi_iterative_opt/rf_diffusion
 mkdir models && cd models
 wget https://files.ipd.uw.edu/pub/ppi_iterative_opt/rf_diffusion/models/BFF_4.pt
-wget http://files.ipd.uw.edu/pub/RFdiffusion/60f09a193fb5e5ccdc4980417708dbab/Complex_Fold_base_ckpt.pt
+wget http://files.ipd.uw.edu/pub/ppi_iterative_opt/rf_diffusion/models/base_complex_ss_finetuned_BFF_9.pt
 cd ../../../../
 ~~~
 
