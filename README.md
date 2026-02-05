@@ -112,6 +112,8 @@ For all targets, with the exception of MspA which uses tied positions to enforce
 ### helical <a name="helical"></a>
 [Google Colab Notebook for helical WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb)
 
+[Google Colab Notebook example for homo-oligomer MspA](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/mspa.ipynb)
+
 Directories containing inputs and commands used for the paper
 
 * C8 - For C8 symmetric helical inputs for RFdiffusion loop building to generate h16 WRAPs
