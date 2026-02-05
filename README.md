@@ -112,7 +112,9 @@ For all targets, with the exception of MspA which uses tied positions to enforce
 ### helical <a name="helical"></a>
 [Google Colab Notebook for helical WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/helical_wraps.ipynb)
 
-[Google Colab Notebook example for homo-oligomer MspA](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/mspa.ipynb)
+[Google Colab Notebook example for homo-oligomeric MspA](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/mspa.ipynb)
+
+[Google Colab Notebook example for miniCXCR4 with pseudo-symmetric WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/miniCXCR4.ipynb).
 
 Directories containing inputs and commands used for the paper
 
@@ -127,7 +129,7 @@ Directories containing inputs and commands used for the paper
 
 
 ### barrel <a name="barrel"></a>
-[Google Colab Notebook for barrel WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb)
+[Google Colab Notebook for parametric barrel WRAPs](https://colab.research.google.com/github/davidekim/WRAPs/blob/main/barrel_wraps.ipynb)
 
 Directory containing inputs and commands used for the paper
 
