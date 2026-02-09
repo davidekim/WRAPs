@@ -82,11 +82,11 @@ cd ../../../../
 ~~~
 
 ### Dependencies/Environment setup <a name="deps"></a>
-It is recommended to create and use a [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) Python 3.9 environment with Anaconda or Miniconda first.
+It is recommended to create and use a [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) Python 3.10 environment with Anaconda or Miniconda first.
 Note: Due to different GPU types, drivers, and future incompatibilities, this environment may not run on all setups.
 
 ~~~
-pip install jedi omegaconf hydra-core icecream pyrsistent pynvml decorator
+pip install torch tensorflow jedi omegaconf hydra-core icecream pyrsistent pynvml decorator psutil tqdm requests pandas "numpy>=2.0"
 pip install git+https://github.com/NVIDIA/dllogger#egg=dllogger
 pip install --no-dependencies dgl -f https://data.dgl.ai/wheels/torch-2.4/cu124/repo.html
 pip install --no-dependencies e3nn==0.5.5 opt_einsum_fx
@@ -97,11 +97,6 @@ pip install --upgrade "jax[cuda12_pip]<0.6.0" -f https://storage.googleapis.com/
 cd submodules/ppi_iterative_opt/rf_diffusion/env/SE3Transformer; pip install .; cd ../../../../../
 pip install --upgrade pybiolib
 pip install pyrosetta --find-links https://west.rosettacommons.org/pyrosetta/quarterly/release
-pip install torch
-pip install psutil
-pip install tqdm
-pip install requests
-pip install pandas
 export DGLBACKEND="pytorch"
 export PATH="$PATH:$(pwd)/submodules/ppi_iterative_opt/rf_diffusion"
 ~~~
