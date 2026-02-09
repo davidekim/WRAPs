@@ -98,7 +98,6 @@ cd submodules/ppi_iterative_opt/rf_diffusion/env/SE3Transformer; pip install .; 
 pip install --upgrade pybiolib
 pip install pyrosetta --find-links https://west.rosettacommons.org/pyrosetta/quarterly/release
 export DGLBACKEND="pytorch"
-export PATH="$PATH:$(pwd)/submodules/ppi_iterative_opt/rf_diffusion"
 ~~~
 
 
